@@ -1,5 +1,5 @@
 <?php
-	include("connection.php");
+	include("https://flow4628.github.io/connection.php");
 	$seat= $_POST["seat"];
 	$name= $_POST["username"];
 	$gender= $_POST["gender"];
