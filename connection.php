@@ -1,6 +1,6 @@
 <?php
-	$server= "";
-	$user = "root";
+	$server= "%";
+	$user = "";
 	$pass = "";
 	$database = "座位表";
 	$connect=mysqli_connect($server,$user,$pass,$database);
