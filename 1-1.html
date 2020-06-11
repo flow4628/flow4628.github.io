@@ -1,3 +1,15 @@
+<?php
+	$server= "localhost";
+	$user = "root";
+	$pass = "";
+	$database = "座位表";
+	$connect=mysqli_connect($server,$user,$pass,$database);
+	if($connect){
+		echo "Connection success...!!";
+	}else{
+		echo "Connection Not success...!!";
+	}
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,7 +21,7 @@
 	<h1>1-1座位</h1>
 	<img src="https://flow4628.github.io/default.png">
 	<br>
-	<form name ="frm" method="POST" action="https://flow4628.github.io/indexHandler.php">
+	<form name ="frm" method="POST" action="">
 		<label>座位編號:</label>
 			<input type="text" name="seat" value="1-1座位">
 	</br>
