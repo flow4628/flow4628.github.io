@@ -1,5 +1,5 @@
 <?php
-	include("connection.html");
+	include("connection.php");
 	$seat= $_POST["seat"];
 	$name= $_POST["username"];
 	$gender= $_POST["gender"];
