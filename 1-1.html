@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>1-1座位</title>
+</head>
+<body>
+<center>
+	<h1>1-1座位</h1>
+	<img src="default.png">
+	<br>
+	<form name ="frm" method="POST" action="indexHandler.php">
+		<label>座位編號:</label>
+			<input type="text" name="seat" value="1-1座位">
+	</br>
+	<br>
+		<label for="username">請輸入姓名:</label>
+			<input type="text" name="username" id="username">
+	</br>
+	<br>
+		<label>性別:</label>
+		<select name="gender">
+		<option selected hidden value="">Select Code</option>
+　		<option>男</option>
+　		<option>女</option>
+		</select>
+	</br>
+	<br>
+		<label>簽到或簽退:</label>
+		<select name="sign">
+		<option selected hidden value="">Select Code</option>
+　		<option>簽到</option>
+　		<option>簽退</option>
+		</select>
+	</br>
+	<br>
+		<label>簽到或簽退:</label>
+		<input type = "datetime-local" name = "mydate" value = ""/>
+	</br>
+	<p>
+		<input type="submit" name="submit" value="送出">
+		<input type="reset" name="reset" value="重設">
+	</form>
+</center>
+</body>
+</html>
