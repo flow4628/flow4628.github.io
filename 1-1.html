@@ -1,3 +1,28 @@
+<?php
+	$server= "localhost";
+	$user = "root";
+	$pass = "";
+	$database = "座位表";
+	$connect=mysqli_connect($server,$user,$pass,$database);
+	if($connect){
+		echo "Connection success...!!";
+	}else{
+		echo "Connection Not success...!!";
+	}
+	$seat= $_POST["seat"];
+	$name= $_POST["username"];
+	$gender= $_POST["gender"];
+	$sign= $_POST["sign"];
+	$mydate= $_POST["mydate"];
+	if(isset($_POST["submit"])){
+	$insert = mysqli_query($connect,"insert into seating values('$seat','$name','$gender','$sign','$mydate')");
+		if($insert){
+			echo "Data inserted successful...!!";
+		}else{
+			echo "Data inserted not successful...!!";
+		}
+	}
+?>
 <!DOCTYPE html>
 <html>
 <head>
