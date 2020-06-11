@@ -1,6 +1,6 @@
 <?php
-	$server= "flow4628";
-	$user = "flow4628";
+	$server= "localhost";
+	$user = "root";
 	$pass = "";
 	$database = "座位表";
 	$connect=mysqli_connect($server,$user,$pass,$database);
